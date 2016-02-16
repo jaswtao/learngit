@@ -1,0 +1,44 @@
+{
+        "button": [
+            {
+                "name": "新闻",
+                "sub_button": [
+					{
+                        "type": "media_id", 
+					    "name": "精彩推荐", 
+					    "media_id": "zN_xIND2uPVFEon6toWCbfUy96NU05jchDjvVVdZung",
+                    }
+                ]
+            },
+            {
+                "name": "理财",
+                "sub_button": [
+                    {
+                        "type": "click",
+                        "name": "绑定原有账号",
+                        "key": "wx_bind_exist_account",
+                    },
+                    {
+                        "type": "click",
+                        "name": "我要投资",
+                        "key": "wx_invest_with_login", 
+                    },
+					{
+                        "type": "click",
+                        "name": "我的账户",
+                        "key": "wx_login_to_myaccount",
+                    }
+                ]
+            },
+            {
+                "name": "我的",
+                "sub_button": [
+					{
+                        "type": "media_id",
+                        "name": "小智答疑",
+                        "media_id": "lFYj9flYISRkwAcuBNrd3sXa4LRLzQIgYbkG1xlJN44",
+                    }
+                ]
+            }
+        ]
+    }

@@ -1,0 +1,83 @@
+{
+        "button": [
+            {
+                "name": "智慧",
+                "sub_button": [
+					{
+                        "type": "media_id", 
+					    "name": "精彩推荐", 
+					    "media_id": "GOuUNO-1t3jrpOjRh4RIlE9Be-94bTfEg42mXltMcTI",
+                       
+                    },
+					{
+                        "type": "media_id", 
+					    "name": "网贷百科", 
+					    "media_id": "GOuUNO-1t3jrpOjRh4RIlHhyNlVsJ-6-plMK6kARWYY",
+                       
+                    }
+                ]
+            },
+            {
+                "name": "财富",
+                "sub_button": [
+                    {
+                        "type": "click",
+                        "name": "注册\绑定",
+                        "key": "ws_licai_registered",
+                       
+                    },
+					{
+                        "type": "view",
+                        "name": "幸运抽奖",
+                        "url": "http://www.zfq88.com/m/cellPhoneZp",
+                       
+                    },
+                    {
+                        "type": "click",
+                        "name": "分享红包",
+                        "key": "ws_licai_bonus",
+                       
+                    },
+                    {
+                        "type": "view",
+                        "name": "我要投资",
+                        "url": "http://www.zfq88.com/m/investHome",
+                    },
+					{
+                        "type": "click",
+                        "name": "合伙人",
+                        "key": "ws_licai_generalize",
+                       
+                    }
+                ]
+            },
+            {
+                "name": "圈子",
+                "sub_button": [
+					{
+                        "type": "media_id",
+                        "name": "小智答疑",
+                        "media_id": "GOuUNO-1t3jrpOjRh4RIlIrVP_Nc8mURV22ZiTXogdY",
+                       
+                    },
+                    {
+                        "type": "media_id",
+                        "name": "招聘信息",
+                        "media_id": "1oodgQAqEsCPqhjFiC1IcQ5Rfl_WdHYemKT4Schrov8",
+                       
+                    },
+					{
+                        "type": "media_id",
+                        "name": "智富沙龙",
+                        "media_id": "GOuUNO-1t3jrpOjRh4RIlGZlAvmSvWLxjh3xjlgLwBE",
+                       
+                    },
+                    {
+                        "type": "media_id",
+                        "name": "关于我们",
+                        "media_id": "GOuUNO-1t3jrpOjRh4RIlBSnigYI0NrIn-Y7qxmX2Og",
+                    }
+                ]
+            }
+        ]
+    }
