@@ -14,29 +14,32 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import com.tl.common.StringUtils;
+import com.tl.exceptions.BaseException;
 
 public class AnalizeAccessLog {
 
-	public static void main(String[] args) throws IOException, URISyntaxException {
+	public static void main(String[] args) throws Exception, BaseException {
 		/*AnalizeAccessLog aal = new AnalizeAccessLog();
 		aal.getRoot();*/
+		String projectPath = System.getProperty("user.dir");
+		//Properties properties = CustomizeProperties.initProperties(projectPath + "/src/main/resources/config.properties");
 		try {
-			analizeFile("E:\\project\\learngit\\src\\main\\resources\\blocklist.txt");
+			analizeFile(projectPath + "/src/main/resources/blocklist.txt", projectPath + "/src/main/resources/script.sh");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static void analizeFile(String path) throws Exception {
-		if (StringUtils.isBlank(path)) {
+	public static void analizeFile(String sourcePath, String outputPath) throws Exception {
+		if (StringUtils.isBlank(sourcePath)) {
 			System.out.println("empty path!");
 		}
 		BufferedReader br = null;
 		BufferedWriter bw = null;
 		try {
-			File file = new File(path);
+			File file = new File(sourcePath);
 			br = new BufferedReader(new FileReader(file));
-			File tofile = new File("E:\\project\\learngit\\src\\main\\resources\\script.sh");
+			File tofile = new File(outputPath);
 			if (tofile.exists()) {
 				tofile.delete();
 			}
@@ -62,6 +65,7 @@ public class AnalizeAccessLog {
 				bw.newLine();
 			}
 			bw.append("service iptables save");
+			System.out.println("mission complete!");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
